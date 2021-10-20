@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//implementation---
+
+let arr =[2,4,6,8];
+function rotateRight(arr){
+    let last = arr.pop();
+    arr.unshift(last);
+    return arr;
+}
+console.log(rotateRight(arr));
+
+</script>
+ 
+</body>
+</html>
+
+//Algorithem---
+
+1-function we are going to write is called rotateRight and will accept an array
+,arr,as an argument.
+
+-let arr = [2,4,6,8];
+-rotateRight(arr);
+
+ 2-We assign that last element to a variable called last--
+
+ -let last = arr.pop();
+
+ 3- next we, will relocate that last element to be the first item in the array, we can't use the push()
+ method as it will send last back to where it was before instead we will use the unshift() method..
+
+ -arr.unshift(last);
+
+ 4-now that we rotated the array to the right, we return the array.
+
+ -return arr;
+ 
+
+
+
+
+
